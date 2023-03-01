@@ -9,4 +9,4 @@
 /debian/files
 /pkg/gcredstash*
 .DS_Store
-./build/linux_*
+/build/linux_*/
