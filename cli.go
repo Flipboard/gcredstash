@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gcredstash"
-	"gcredstash/command"
+	"github.com/Flipboard/gcredstash/src/gcredstash"
+	"github.com/Flipboard/gcredstash/src/gcredstash/command"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/kms"

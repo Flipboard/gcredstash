@@ -2,7 +2,7 @@ package gcredstash
 
 import (
 	"bytes"
-	. "gcredstash"
+	. "github.com/Flipboard/gcredstash/src/gcredstash"
 	"testing"
 )
 
