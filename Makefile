@@ -64,6 +64,10 @@ deb\:docker: clean
 docker\:build\:ubuntu-trusty:
 	docker build -f docker/Dockerfile.ubuntu-trusty -t $(UBUNTU_IMAGE) .
 
+buildx:
+	docker buildx build --platform=linux/amd64 -o build -f docker/Dockerfile .
+	docker buildx build --platform=linux/arm64 -o build -f docker/Dockerfile .
+
 rpm:
 	docker run --name $(CENTOS_CONTAINER_NAME) -v $(shell pwd):/tmp/src $(CENTOS_IMAGE) make -C /tmp/src rpm:docker
 	docker rm $(CENTOS_CONTAINER_NAME)

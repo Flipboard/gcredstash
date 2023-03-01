@@ -2,9 +2,9 @@ package command
 
 import (
 	"fmt"
-	"gcredstash"
-	. "gcredstash/command"
-	"gcredstash/testutils"
+	"github.com/Flipboard/gcredstash/src/gcredstash"
+	. "github.com/Flipboard/gcredstash/src/gcredstash/command"
+	"github.com/Flipboard/gcredstash/src/gcredstash/testutils"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/golang/mock/gomock"
